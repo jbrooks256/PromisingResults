@@ -30,26 +30,26 @@
 // });
 
 async function doMath() {
-    try { let result = await slowMath.add(6,2);
-        console.log(result);
-        result = await slowMath.multiply(result, 2);
-        console.log(result);
-        result = await slowMath.divide(result, 4);
-        console.log(result);
-        result = await slowMath.subtract(result, 3);
-        console.log(result);
-        result = await slowMath.add( result, 98);
-        console.log(result);
-        result = await slowMath.remainder(result, 2);
-        console.log(result);
-        result = await slowMath.multiply(result, 50);
-        console.log(result);
-        result = await slowMath.remainder(result, 40);
-        console.log(result);
-        result = await slowMath.add(result, 32);
-        console.log(`The final result is ${result}`);
-    } catch (error) {
-        console.log(error)
+    try { let res = await slowMath.add(6,2);
+        console.log(res);
+        res = await slowMath.multiply(res, 2);
+        console.log(res);
+        res = await slowMath.divide(res, 4);
+        console.log(res);
+        res = await slowMath.subtract(res, 3);
+        console.log(res);
+        res = await slowMath.add( res, 98);
+        console.log(res);
+        res = await slowMath.remainder(res, 2);
+        console.log(res);
+        res = await slowMath.multiply(res, 50);
+        console.log(res);
+        res = await slowMath.remainder(res, 40);
+        console.log(res);
+        res = await slowMath.add(res, 32);
+        console.log(`The final result is ${res}`);
+    } catch (err) {
+        console.log(err)
     }
 }
 
